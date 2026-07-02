@@ -4,11 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Uchenna Godstime Owuamanam" />
+    <meta name="description"
+        content="An introduction about myself, where i live and where i work. The purpose of this page and its goal. " />
+    <title>About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <img src="images/unity.svg" alt="site logo" width="25" height="25">
+        <span>Uchenna Godstime</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <hr>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="top-section">
+
+
+            <div class="card">
+
+                <div class="card-title">
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="card-body">
+
+                    <p>My name is Uchenna. I am from Nigeria. I live and work in Dubai, United Arab Emirates. i was born
+                        and braide up in the Eastern part of Nigeria Isi-Ala Mbano L.G.A, Imo State. I was baptized and
+                        became a member of The Church of Jesus-Christ of Letter-days Saint since the year 2007. <br> I
+                        served as
+                        a full-time missionary in Congo Kinshasa mission in the year 2017-2019. I am engaged and will
+                        soon
+                        get married to my lovely fiancee. <strong>Live is all about Unity and in Unity i stand</strong>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-title">
+                    <h2>Student Photo</h2>
+                </div>
+
+                <div class="card-body photo-body">
+
+                    <img src="images/my_pic.jpg" alt="my photo">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="courses">
+
+            <div class="section-title">
+                <h2> Web Certificate Courses
+                </h2>
+            </div>
+
+            <div class="buttons">
+
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+
+            </div>
+
+            <div id="course-container"></div>
+
+            <p id="credits"></p>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- <h1>Home</h1>
+    <section>
+        <h2>About Me</h2>
+    </section><hr>
+
+    <section>
+        <h2>Student Photo</h2>
+    </section><hr>
+
+    <section>
+        <h2>Web Certificate Courses</h2>
+    </section><hr> -->
+
+    <footer>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/facebook.svg" alt="facebook" width="25" height="25"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkin" width="25" height="25"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="25" height="25"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="github" width="25" height="25"></a>
+        </div>
+
+        <!-- <p>Copyright symbol and current year</p>
+    <p>Last Modified</p> -->
+
+        <p id="currentyear">
+            <span></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+
 </body>
 
 </html>

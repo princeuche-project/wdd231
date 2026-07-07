@@ -1,0 +1,66 @@
+{
+    "companies":[
+      {
+        "name" : "Empower Energy Solution",
+        "address" : "Jumeirah Beach Road, Dubai, UAE",
+        "contact" : "+97143755555",
+        "website": "www.empower.ae",
+        "imageurl" : "images/empower.jpeg",
+        "membershipLevel": "45"
+      },
+
+     {
+        "name" : "Federal Express Corp (FDEX)",
+        "address" : "Memphis, Tennessee, US",
+        "contact" : "1.800.463.3339",
+        "website": "https://www.fedex.com/",
+        "imageurl" : "images/fedex.png",
+        "membershipLevel": "50"
+      },
+ 
+      {
+        "name" : "Amazon E-commerce Company",
+        "address" : "Seattle, Washington, United States",
+        "contact" : "1-206-266-1000",
+        "website": "www.amazon.com",
+        "imageurl" : "images/amazon.jpeg" ,
+        "membershipLevel": "55"
+      },
+
+      {
+        "name" : "Air Peace",
+        "address" : "25 Sobo Arobiodu St, GRA Lagos 101233, Ikeja, Lagos, Nigeria",
+        "contact" : "+234 700 35924 773223",
+        "website": "www.airpeace.com",
+        "imageurl" : "images/airpeacee.jpeg",
+        "membershipLevel": "48"
+      },
+
+      {
+        "name" : "American Airline",
+        "address" : "Fort Worth, Texas, United States",
+        "contact" : "800-433-7300",
+        "website": "www.aa.com",
+        "imageurl" : "images/americanair.jpeg",
+        "membershipLevel": "40"
+      },
+
+      {
+        "name" : "Alibaba Group",
+        "address" : "Hangzhou, China",
+        "contact" : "(408) 785-5580",
+        "website": "www.alibaba.com",
+        "imageurl" : "images/alibaba.png",
+        "membershipLevel": "70"
+      },
+
+      {
+        "name" : "U.C INT'L EXCHANGE",
+        "address" : "Al quoz 1, Dubai UAE",
+        "contact" : "+971507109287",
+        "website": "www.ucexchange.com",
+        "imageurl" : "images/UCexchange.jpg",
+        "membershipLevel": "01"
+      }
+    ]
+}

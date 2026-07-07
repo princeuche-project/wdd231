@@ -72,6 +72,9 @@ header span{
   }
   h1{
     margin-left: 10px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
   }
 .hamburger{
   background: none;

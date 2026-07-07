@@ -16,10 +16,8 @@ function displayMembers(companies) {
         card.innerHTML = `
             <img src="${company.imageurl}"  alt="${company.name}"
             <h2>Company name: ${company.name}</h2>
-           
             <p> Company Contact: ${company.contact}</p>
             <p>Company Address: ${company.address}</p>
-            
             <a href="https://${company.website}" target="_blank">
                 Visit Website
             </a>

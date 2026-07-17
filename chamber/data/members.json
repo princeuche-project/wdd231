@@ -5,8 +5,8 @@
         "address" : "Jumeirah Beach Road, Dubai, UAE",
         "contact" : "+97143755555",
         "website": "www.empower.ae",
-        "imageurl" : "images/empower.jpeg",
-        "membershipLevel": "45"
+        "imageurl" : "images/empower1.png",
+        "membershipLevel": "Gold"
       },
 
      {
@@ -15,7 +15,7 @@
         "contact" : "1.800.463.3339",
         "website": "https://www.fedex.com/",
         "imageurl" : "images/fedex.png",
-        "membershipLevel": "50"
+        "membershipLevel": "Silver"
       },
  
       {
@@ -24,7 +24,7 @@
         "contact" : "1-206-266-1000",
         "website": "www.amazon.com",
         "imageurl" : "images/amazon.jpeg" ,
-        "membershipLevel": "55"
+       "membershipLevel": "Silver"
       },
 
       {
@@ -33,7 +33,7 @@
         "contact" : "+234 700 35924 773223",
         "website": "www.airpeace.com",
         "imageurl" : "images/airpeacee.jpeg",
-        "membershipLevel": "48"
+        "membershipLevel": "Gold"
       },
 
       {
@@ -42,7 +42,7 @@
         "contact" : "800-433-7300",
         "website": "www.aa.com",
         "imageurl" : "images/americanair.jpeg",
-        "membershipLevel": "40"
+        "membershipLevel": "Silver"
       },
 
       {
@@ -51,7 +51,7 @@
         "contact" : "(408) 785-5580",
         "website": "www.alibaba.com",
         "imageurl" : "images/alibaba.png",
-        "membershipLevel": "70"
+        "membershipLevel": "Gold"
       },
 
       {
@@ -60,7 +60,7 @@
         "contact" : "+971507109287",
         "website": "www.ucexchange.com",
         "imageurl" : "images/uche.png",
-        "membershipLevel": "01"
+        "membershipLevel": "Gold"
       }
     ]
 }

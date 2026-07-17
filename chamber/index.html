@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the benefits of the Owerri Chamber of Commerce.">
+    <meta name="author" content="Owuamanam Uchenna Godstime">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Owerri Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore businesses in the Owerri Chamber of Commerce directory.">
+    <meta property="og:image" content="https://princeuche-project.github.io/wdd231/chamber/images/owerri.png">
+    <meta property="og:url" content="https://princeuche-project.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <title>Owerri Chamber of Commerce Directory</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/owerri_chamber_favicon.svg" alt="site logo" width="40" height="25">
+        <span>Owerri Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+
+    </header>
+    <hr>
+
+    <nav class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+
+        <section class="hero">
+            <!-- <img src="images/owerri-chamber.webp" alt="Owerri Chamber of Commerce"> -->
+
+            <div class="hero-content">
+                <h1>Welcome to the Owerri Chamber of Commerce</h1>
+
+                <p>
+                    Connecting Businesses. Building Communities.
+                </p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+            </div>
+        </section>
+
+        <section class="events">
+
+            <h2>Current Events</h2>
+
+            <div class="event-card">
+
+                <h3>Business Networking Summit</h3>
+
+                <p>
+                    Join local entrepreneurs for networking and investment opportunities this August.
+                </p>
+
+                <p>
+                    Grow your business and meet like minded people at some of the biggest business and networking events
+                    in Owerri. Managing
+                    a big firm or planning to build a startup, there are all the kinds of business events that suit your
+                    preferences. Be a
+                    part of huge summits, startup events or a relatively casual business luncheon and find the right
+                    platform to engage with
+                    such business events in Owerri. Explore from the extensive business events near you; for business
+                    growth, for
+                    networking, for finding answers or just simply for personal growth.
+
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Current Weather</h2>
+
+            <p>
+                Temperature:
+                <span id="temperature"></span>
+            </p>
+
+            <p>
+                Condition:
+                <span id="description"></span>
+            </p>
+
+            <h3>3-Day Forecast</h3>
+
+            <div id="forecast"></div>
+
+        </section>
+
+        <section>
+
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlights"></div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="25"
+                    height="25"></a>
+            <a href="https://www.linkedin.com/in/uchenna-god-time-owuamanam-b43323262/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linkin" width="25" height="25"></a>
+            <a href="https://x.com/home" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="25"
+                    height="25"></a>
+            <a href="https://github.com/princeuche-project/wdd231" target="_blank"><img src="images/github.svg"
+                    alt="github" width="25" height="25"></a>
+        </div>
+
+        <!-- <p>Copyright symbol and current year</p>
+    <p>Last Modified</p> -->
+
+
+        <span id="currentyear"></span>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

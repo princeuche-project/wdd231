@@ -15,28 +15,46 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--secondary-color);
     color: var(--text-color);
+    line-height:1.6;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 24px auto 44px;
-  align-items: end;
-  padding: 5px 0 5px 10px;
-  column-gap: 10px;
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:1rem;
 }
+
+h1,h2,h3{
+    color:var(--primary-color);
+}
+
+section{
+    margin:1.5rem 0;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+    background:var(--primary-color);
+    color:var(--secondary-color);
+}
+
 
 header img{
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 3px;
+    border-radius: 30px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    width:55px;
+    height:55px;
 }
 
-header span{
-  font-size: 1.2rem;
-  color: var(--primary-color);
+ header span{
+    font-size:1.5rem;
+    color: var(--secondary-color);
 }
-
 
 .navigation{
   display: none;
@@ -80,7 +98,7 @@ header span{
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 #members.list {
@@ -109,8 +127,6 @@ header span{
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    /* width: 100%;
-    max-width: 300px; */
     margin: auto;
 }
 
@@ -215,10 +231,6 @@ header span{
     transform: translateY(-2px);
 }
 
- /* button:active {
-    transform: scale(0.97);
-} */
-
  button.active {
     background-color: var(--accent-color);
      transform: scale(0.97);
@@ -254,16 +266,257 @@ header span{
   height: 22px;
 }
 
+/* HOME PAGE CSS DESIGN */
+
+.hero {
+    position: relative;
+    min-height: 550px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+
+     background-image: url("../images/owerri-chamber.webp"); 
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    display: flex;
+     align-items: center; 
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,25,55,0.95) 0%,
+            rgba(3,25,55,0.75) 35%,
+            rgba(3,25,55,0.15) 70%
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 3rem 4rem;
+    color:var(--secondary-color);
+}
+
+.hero h1 {
+  display: flex;
+  font-size: clamp(2.5rem,5vw,4.5rem); 
+   line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  background: none;
+  
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 450px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color:var(--secondary-color);
+}
+
+.cta-button {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:#d4a017;
+  color:var(--text-color);
+  padding:15px 35px;
+  border-radius:50px;
+  text-decoration:none;
+  font-size:1.1rem;
+  font-weight:700;
+  transition:.3s;
+}
+
+.cta-button:hover {
+  background:var(--secondary-color);
+  transform:translateY(-3px);
+  color: var(--primary-color);
+}
+
+
+
+/* .hero{
+    position:relative;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:2rem;
+}
+
+.hero img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.hero-content{
+    position:absolute;
+    bottom: 5px;
+    right:15px;
+    transform:translateY(-50%);
+    color:white;
+    max-width:500px;
+}
+
+.hero-content h1{
+    color:white;
+    font-size:3rem;
+     font-size: clamp(2.5rem,5vw,4.5rem);
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    margin-bottom: 1.5rem;
+
+    letter-spacing: -1px;
+    
+}
+
+.hero-content {
+
+    position: relative;
+    z-index: 1;
+
+    width: 50%;
+    padding: 3rem 4rem;
+
+    color:white;
+}
+
+ .hero-content p{
+    font-size:1.2rem;
+    margin-bottom:1rem;
+}
+
+.cta-button{
+    display:inline-block;
+    background:#f4b400;
+    color:var(--text-color);
+    padding:14px 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.cta-button:hover{
+    background:var(--primary-color);
+    color: var(--secondary-color);
+} */
+
+/* .home-grid{
+    display:grid;
+    gap:20px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+} */
+
+.events,
+.weather{
+    background:var(--secondary-color);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.events h2,
+.weather h2{
+    margin-bottom:15px;
+    border-bottom:3px solid var(--primary-color);
+    padding-bottom:8px;
+}
+
+#forecast p{
+    margin:.5rem 0;
+}
+
+.spotlights h2{
+    margin-bottom:20px;
+}
+
+#spotlights{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+#spotlights section{
+    background:var(--secondary-color);
+    border-radius:12px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+#spotlights section:hover{
+    transform:translateY(-8px);
+}
+
+#spotlights img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+    margin:15px auto;
+}
+
+#spotlights h3{
+    margin-bottom:10px;
+}
+
+#spotlights p{
+    margin:6px 0;
+}
+
+#spotlights a{
+    color:var(--primary-color);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#spotlights a:hover{
+    text-decoration:underline;
+}
+
+#temperature{
+    font-size:2rem;
+    color:var(--accent-color);
+    font-weight:bold;
+}
+
+#description{
+    text-transform:capitalize;
+}
+
+
 .social a:hover{
   background: var(--secondary-color);
 }
 
-footer{
+ footer{
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 1rem 10px;
   text-align: center;
-}
+} 
 
 
 

@@ -310,7 +310,7 @@ header img{
 }
 
 .hero h1 {
-  display: flex;
+  display: block;
   font-size: clamp(2.5rem,5vw,4.5rem); 
    line-height: 1.1;
   font-weight: 800;

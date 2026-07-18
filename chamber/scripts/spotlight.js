@@ -39,7 +39,8 @@ card.innerHTML=`
 <h3>${member.name}</h3>
 
 <img src="${member.imageurl}"
-alt="${member.name}">
+alt="${member.name}
+loading="lazy"  ">
 
 <p> Contact: ${member.contact}</p>
 

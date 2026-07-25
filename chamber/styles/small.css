@@ -681,9 +681,9 @@ dialog li {
 /* Thank you form design*/
 
 .application-details {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1.2rem;
     list-style: none;
     background-color: var(--secondary-color);
     border-radius: 12px;
@@ -691,8 +691,24 @@ dialog li {
     border-left: 6px solid var(--primary-color);
 }
 
+
+    /* .application-details {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+
+    .application-details li {
+        flex-direction: column;
+        gap: .3rem;
+    }
+
+    .application-details span {
+        text-align: left;
+    } */
+
 .application-details li {
     display: flex;
+    
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem 0;

@@ -37,4 +37,9 @@ font-size:3.5rem;
 
 }
 
+ .join-page {
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+    } 
+
 }

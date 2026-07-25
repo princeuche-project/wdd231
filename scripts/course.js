@@ -1,5 +1,4 @@
-const courses = [
-    {
+const courses = [{
         subject: 'CSE',
         number: 110,
         title: 'Introduction to Programming',
@@ -83,23 +82,28 @@ const container = document.querySelector("#course-container");
 
 const creditDisplay = document.querySelector("#credits");
 
-function displayCourses(courseList){
+function displayCourses(courseList) {
 
     container.innerHTML = "";
 
-    courseList.forEach(course=>{
+    courseList.forEach(course => {
 
         const card = document.createElement("div");
 
         card.classList.add("course-card");
 
-        if(course.completed){
+        if (course.completed) {
             card.classList.add("completed");
         }
 
         card.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
+
         `;
+        // ADD an eventlistener to the card
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         container.appendChild(card);
 
@@ -109,39 +113,64 @@ function displayCourses(courseList){
 
 }
 
-function displayCredits(courseList){
+function displayCredits(courseList) {
 
-    const totalCredits = courseList.reduce((sum, course)=>{
+    const totalCredits = courseList.reduce((sum, course) => {
 
         return sum + course.credits;
 
-    },0);
+    }, 0);
 
     creditDisplay.textContent =
-    `The total credits for the courses listed above is ${totalCredits}`;
+        `The total credits for the courses listed above is ${totalCredits}`;
 
 }
 
-document.querySelector("#all").addEventListener("click",()=>{
+document.querySelector("#all").addEventListener("click", () => {
 
     displayCourses(courses);
 
 });
 
-document.querySelector("#cse").addEventListener("click",()=>{
+document.querySelector("#cse").addEventListener("click", () => {
 
-    const filtered = courses.filter(course=>course.subject==="CSE");
+    const filtered = courses.filter(course => course.subject === "CSE");
+
+    displayCourses(filtered);
+
+});
+
+document.querySelector("#wdd").addEventListener("click", () => {
+
+    const filtered = courses.filter(course => course.subject === "WDD");
 
     displayCourses(filtered);
 
 });
 
-document.querySelector("#wdd").addEventListener("click",()=>{
 
-    const filtered = courses.filter(course=>course.subject==="WDD");
 
-    displayCourses(filtered);
+const courseDetails = document.querySelector("#course-details");
 
-});
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+}
 
 displayCourses(courses);

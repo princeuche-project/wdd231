@@ -431,6 +431,255 @@ header img{
   background: var(--secondary-color);
 }
 
+/* Join page design */
+
+ .join-page {
+     display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+    width: 100%;
+    
+  }
+
+   .join form {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+     border: 1px var(--text-color) solid;
+    border-radius: 5px;  
+    width: 100%;
+    padding: 1.5rem;
+} 
+
+
+label {
+    display: block;
+    padding-top: .2rem;
+    color: var(--text-color);
+    font-size: .9rem;
+} 
+
+ input[type="text"],
+textarea,
+ input[type="date"], input[type="email"], input[type="tel"] {
+    background-color: var(--secondary-color);
+    display: block;
+    border: solid 1px var(--text-color);
+    padding: .75rem;
+    border-radius: 6px;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+  
+
+ /* Membership Cards Section */
+.membership-cards {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+/* Individual Card */
+.membership-card {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp .8s ease forwards;
+}
+
+/* Stagger the animation */
+.membership-card:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: .6s;
+}
+
+/* Headings */
+.membership-card h2 {
+    margin-bottom: .75rem;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+/* Description */
+.membership-card p {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Learn More Link */
+.membership-card a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: .7rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color .3s ease, transform .3s ease;
+}
+
+.membership-card a:hover,
+.membership-card a:focus {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Card Hover Effect */
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .membership-cards {
+        margin-top: 0;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Dialog Design*/
+
+
+/* Dialog Box */
+dialog {
+    width: 90%;
+    max-width: 450px;
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    background: var(--secondary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Backdrop */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+/* Heading */
+dialog h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: .5rem;
+}
+
+/* Paragraph */
+dialog p {
+    text-align: left;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Close Button */
+dialog .close {
+    background-color:  var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: .75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color .3s ease, transform .2s ease;
+}
+
+dialog .close:hover,
+dialog .close:focus {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Dialog Opening Animation */
+dialog[open] {
+    animation: zoomIn .35s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+dialog ul {
+    text-align: left;
+    margin: 1rem 0 2rem;
+    padding-left: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+dialog li {
+    margin-bottom: .5rem;
+}
+
+
+
+
  footer{
   background-color: var(--primary-color);
   color: var(--secondary-color);

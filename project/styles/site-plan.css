@@ -41,7 +41,7 @@ div {
 hr {
     height: 3px;
     margin: 35px 0;
-    background: var(--text-light);
+    background: var(--accent-color);
 }
 
 ul,

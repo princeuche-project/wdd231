@@ -26,8 +26,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script type="module" src="scripts/discover.js" ></script>
 
 </head>
 
@@ -43,10 +42,10 @@
 
     <nav class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li class="current"><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
 
@@ -54,85 +53,17 @@
 
     <main>
 
-        <section class="hero">
-            <!-- <img src="images/owerri-chamber.webp" alt="Owerri Chamber of Commerce"> -->
+        <h1>Discover Owerri</h1>
 
-            <div class="hero-content">
-                <h1>Welcome to the Owerri Chamber of Commerce</h1>
+        <div id="visitMessage"></div>
 
-                <p>
-                    Connecting Businesses. Building Communities.
-                </p>
-
-                <a href="join.html" class="cta-button">
-                    Join the Chamber
-                </a>
-            </div>
-        </section>
-
-        <section class="events">
-
-            <h2>Current Events</h2>
-
-            <div class="event-card">
-
-                <h3>Business Networking Summit</h3>
-
-                <p>
-                    Join local entrepreneurs for networking and investment opportunities this August.
-                </p>
-
-                <p>
-                    Grow your business and meet like minded people at some of the biggest business and networking events
-                    in Owerri. Managing
-                    a big firm or planning to build a startup, there are all the kinds of business events that suit your
-                    preferences. Be a
-                    part of huge summits, startup events or a relatively casual business luncheon and find the right
-                    platform to engage with
-                    such business events in Owerri. Explore from the extensive business events near you; for business
-                    growth, for
-                    networking, for finding answers or just simply for personal growth.
-
-
-                </p>
-
-            </div>
-
-        </section>
-
-        <section class="weather">
-
-            <h2>Current Weather</h2>
-
-            <p>
-                Temperature:
-                <span id="temperature"></span>
-            </p>
-
-            <p>
-                Condition:
-                <span id="description"></span>
-            </p>
-
-            <h3>3-Day Forecast</h3>
-
-            <div id="forecast"></div>
-
-        </section>
-
-        <section>
-
-            <h2>Member Spotlights</h2>
-
-            <div id="spotlights"></div>
+        <section class="discover-grid">
 
         </section>
 
     </main>
 
-
-
-
+   
 
 
     <footer>

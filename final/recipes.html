@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Uchenna Godstime Owuamanam">
+    <meta name="description"
+        content="Browse 15 healthy recipe ideas with preparation time, category, calories, descriptions, search, favorites, and accessible recipe details.">
+    <meta property="og:title" content="Healthy Recipes | Healthy Life Nutrition">
+    <meta property="og:description" content="Browse healthy recipe ideas and save your favorites.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://princeuche-project.github.io/wdd231/final/recipes.html">
+    <title>Healthy Recipes | Healthy Life Nutrition</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/app.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner"><a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="42"
+                    height="42">Healthy Life Nutrition</a><button id="menu-button" class="menu-button" type="button"
+                aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">☰</button></div>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition Basics</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="section">
+            <div class="container">
+                <h1>Healthy Recipes</h1>
+                <!-- <p class="section-intro">These recipe cards are generated dynamically from a local JSON data source
+                    using the Fetch API.</p> -->
+                <div class="filters">
+                    <div><label for="recipe-search">Search recipes</label><input id="recipe-search" type="search"
+                            placeholder="Try chicken, breakfast, salad..."></div>
+                    <div><label for="category-filter">Category</label><select id="category-filter">
+                            <option>All</option>
+                            <option>Breakfast</option>
+                            <option>Lunch</option>
+                            <option>Dinner</option>
+                            <option>Snack</option>
+                            <option>Drink</option>
+                        </select></div>
+                </div>
+                <label><input id="favorites-only" type="checkbox" style="width:auto"> Show saved recipes only</label>
+                <p id="recipe-status" class="status" aria-live="polite">Loading recipes...</p>
+                <div id="recipe-grid" class="recipe-grid" style="margin-top:1.2rem"></div>
+            </div>
+        </section>
+    </main>
+    <dialog id="recipe-modal" aria-labelledby="modal-title">
+        <div class="modal-inner"><button id="modal-close" class="modal-close" type="button"
+                aria-label="Close recipe details">×</button>
+            <h2 id="modal-title">Recipe details</h2>
+            <div id="modal-body"></div>
+        </div>
+    </dialog>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div><strong>Healthy Life Nutrition</strong>
+                <p>Practical guidance for balanced everyday eating.</p>
+            </div>
+            <div class="footer-links"><a href="attributions.html">Attributions</a></div>
+        </div>
+         <span id="currentyear"></span>
+
+         <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

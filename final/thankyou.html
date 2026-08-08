@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Uchenna Godstime Owuamanam">
+<meta name="description" content="Healthy Life Nutrition form submission confirmation.">
+<meta property="og:title" content="Submission Received | Healthy Life Nutrition">
+<meta property="og:description" content="Confirmation page for the Healthy Life Nutrition preference form.">
+<title>Submission Received | Healthy Life Nutrition</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles/main.css">
+<script type="module" src="scripts/app.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="42" height="42">Healthy Life Nutrition</a></div></header>
+<main class="form-result"><div class="container">
+<h1>Thank you for your submission</h1>
+<p>Your form data was received and displayed below.</p>
+<dl id="submission-data"></dl>
+<a class="btn" href="index.html">Return home</a>
+</div></main>
+<footer class="site-footer"><p>© <span id="year"></span> Uchenna Godstime Owuamanam.</p></footer>
+<script type="module">
+const params = new URLSearchParams(location.search);
+const data = [["Name",params.get("name")],["Email",params.get("email")],["Goal",params.get("goal")],["Message",params.get("message")]];
+document.querySelector("#submission-data").innerHTML = data.map(([label,value]) => `<dt>${label}</dt><dd>${value ? value.replaceAll("<","&lt;").replaceAll(">","&gt;") : "Not provided"}</dd>`).join("");
+</script>
+</body>
+</html>

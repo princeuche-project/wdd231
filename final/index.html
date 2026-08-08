@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Uchenna Godstime Owuamanam">
+  <meta name="description"
+    content="Healthy Life Nutrition helps you build balanced eating habits with practical nutrition guidance, meal ideas, and simple tools.">
+  <meta property="og:title" content="Healthy Life Nutrition">
+  <meta property="og:description"
+    content="Practical nutrition guidance, healthy meal ideas, and simple tools for better everyday choices.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://princeuche-project.github.io/wdd231/final/">
+  <meta property="og:image" content="images/hero.svg">
+  <title>Healthy Life Nutrition | Home</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/date.js" defer></script>
+  <script type="module" src="scripts/app.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="images/favicon.svg" alt="" width="42" height="42">Healthy Life
+        Nutrition</a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"
+        aria-label="Open navigation menu">☰</button>
+    </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nutrition.html">Nutrition Basics</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Simple • Balanced • Practical</p>
+          <h1>Build healthier habits one meal at a time.</h1>
+          <p>Learn the basics of balanced nutrition, explore practical recipes, and use simple tools to make healthier
+            everyday choices.</p>
+          <div class="actions">
+            <a class="btn" href="nutrition.html">Explore nutrition</a>
+            <a class="btn secondary" href="recipes.html">Browse recipes</a>
+          </div>
+        </div>
+        <img src="images/hero.jpg" alt="Illustration of a balanced plate with colorful healthy foods" width="800"
+          height="500">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What you can do here</h2>
+        <p class="section-intro">Healthy eating does not have to be complicated. Start with useful information,
+          realistic meal ideas, and small changes you can maintain.</p>
+        <div class="cards">
+          <article class="info-card">
+            <h3>Understand nutrition</h3>
+            <p>Learn what carbohydrates, proteins, fats, vitamins, minerals, and water do for the body.</p>
+          </article>
+          <article class="info-card">
+            <h3>Find meal ideas</h3>
+            <p>Explore 15 dynamically loaded recipes and filter them by category or search term.</p>
+          </article>
+          <article class="info-card">
+            <h3>Track your preferences</h3>
+            <p>Your saved recipes and selected goal are stored in your browser using local storage.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="container">
+        <h2>Quick water estimate</h2>
+        <p class="section-intro">Use this simple educational estimate as a starting point, not as medical advice.</p>
+        <form id="water-form" class="panel" style="padding:1.2rem">
+          <label for="water-weight">Weight in kilograms</label>
+          <input id="water-weight" name="weight" type="number" min="1" step="0.1" required>
+          <button class="btn" type="submit">Calculate</button>
+          <p id="water-result" class="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Tell us your goal</h2>
+        <p class="section-intro">This small form demonstrates accessible form handling. Your selection is also
+          remembered on this device.</p>
+        <form id="preference-form" class="panel" action="thankyou.html" method="get" style="padding:1.2rem">
+          <div class="form-grid">
+            <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"
+                required></div>
+            <div><label for="goal">Main goal</label>
+              <select id="goal" name="goal" required>
+                <option value="">Select a goal</option>
+                <option>Eat more vegetables</option>
+                <option>Plan balanced meals</option>
+                <option>Learn nutrition basics</option>
+                <option>Discover healthy recipes</option>
+              </select>
+            </div>
+            <div><label for="message">Message</label><input id="message" name="message" placeholder="Optional note">
+            </div>
+            <div class="full"><button class="btn" type="submit">Submit</button></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>Healthy Life Nutrition</strong>
+        <p>Practical guidance for balanced everyday eating.</p>
+      </div>
+      <div class="footer-links"><a href="attributions.html">Attributions</a><a href="index.html#tools">Tools</a></div>
+    </div>
+    <!-- <p>© <span id="year"></span> Uchenna Godstime Owuamanam. All rights reserved.</p> -->
+
+    <span id="currentyear"></span>
+
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Avocado Egg Toast",
+    "category": "Breakfast",
+    "time": "10 min",
+    "calories": 320,
+    "description": "Whole-grain toast topped with creamy avocado and a protein-rich egg.",
+    "image": "images/recipe-breakfast.png"
+  },
+  {
+    "id": 2,
+    "name": "Berry Oat Bowl",
+    "category": "Breakfast",
+    "time": "8 min",
+    "calories": 350,
+    "description": "Warm oats with berries, chia seeds, cinnamon, and natural sweetness.",
+    "image": "images/recipe-oat.png"
+  },
+  {
+    "id": 3,
+    "name": "Greek Yogurt Parfait",
+    "category": "Breakfast",
+    "time": "5 min",
+    "calories": 280,
+    "description": "Greek yogurt layered with fruit, oats, and crunchy nuts.",
+    "image": "images/recipe-yogurt.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Garden Chicken Salad",
+    "category": "Lunch",
+    "time": "20 min",
+    "calories": 410,
+    "description": "Lean chicken, colorful vegetables, greens, and a light dressing.",
+    "image": "images/recipe-salad.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Quinoa Veggie Bowl",
+    "category": "Lunch",
+    "time": "25 min",
+    "calories": 390,
+    "description": "Quinoa combined with roasted vegetables, beans, and fresh herbs.",
+    "image": "images/recipe-bowl.png"
+  },
+  {
+    "id": 6,
+    "name": "Turkey Hummus Wrap",
+    "category": "Lunch",
+    "time": "12 min",
+    "calories": 370,
+    "description": "A whole-wheat wrap filled with turkey, hummus, lettuce, and tomatoes.",
+    "image": "images/recipe-wrap.png"
+  },
+  {
+    "id": 7,
+    "name": "Grilled Lemon Chicken",
+    "category": "Dinner",
+    "time": "30 min",
+    "calories": 450,
+    "description": "Juicy grilled chicken seasoned with lemon, garlic, and herbs.",
+    "image": "images/recipe-chicken.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Baked Salmon Plate",
+    "category": "Dinner",
+    "time": "28 min",
+    "calories": 480,
+    "description": "Oven-baked salmon served with vegetables and a whole grain.",
+    "image": "images/recipe-salmon.png"
+  },
+  {
+    "id": 9,
+    "name": "Vegetable Stir-Fry",
+    "category": "Dinner",
+    "time": "22 min",
+    "calories": 360,
+    "description": "Crisp mixed vegetables cooked quickly with a savory low-sugar sauce.",
+    "image": "images/recipe-stirfry.png"
+  },
+  {
+    "id": 10,
+    "name": "Lentil Tomato Soup",
+    "category": "Dinner",
+    "time": "35 min",
+    "calories": 330,
+    "description": "Comforting lentils simmered with tomatoes, carrots, and herbs.",
+    "image": "images/recipe-soup.png"
+  },
+  {
+    "id": 11,
+    "name": "Apple Nut Snack Box",
+    "category": "Snack",
+    "time": "5 min",
+    "calories": 240,
+    "description": "Apple slices paired with nuts and a small portion of yogurt.",
+    "image": "images/recipe-snack.png"
+  },
+  {
+    "id": 12,
+    "name": "Hummus Veggie Cups",
+    "category": "Snack",
+    "time": "7 min",
+    "calories": 210,
+    "description": "Crunchy vegetables served with smooth, protein-rich hummus.",
+    "image": "images/recipe-hummus.png"
+  },
+  {
+    "id": 13,
+    "name": "Mango Green Smoothie",
+    "category": "Drink",
+    "time": "6 min",
+    "calories": 230,
+    "description": "Mango, spinach, banana, and yogurt blended into a refreshing drink.",
+    "image": "images/recipe-smoothy.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Banana Peanut Oat Shake",
+    "category": "Drink",
+    "time": "6 min",
+    "calories": 310,
+    "description": "A creamy oat-based shake with banana and peanut butter.",
+    "image": "images/recipe-shake.png"
+  },
+  {
+    "id": 15,
+    "name": "Fruit Chia Pudding",
+    "category": "Snack",
+    "time": "10 min",
+    "calories": 260,
+    "description": "Chia seeds soaked in milk and finished with fresh seasonal fruit.",
+    "image": "images/recipe-chai.png"
+  }
+]
